@@ -27,5 +27,6 @@ public class Zoomcar {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[text()='Chennai']")).click();
 		System.out.println("Self Drive Car Rental in: Chennai");
+		Thread.sleep(2000);
 	}
 }
