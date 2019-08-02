@@ -20,12 +20,16 @@ public class Zoomcar {
 		{
 		 System.out.println(element.get(i).getText());
 		}
-		/*WebElement city = driver.findElement(By.xpath("//div[@class='cities p-cities']"));
-		Select pcity = new Select(city);
-		pcity.selectByIndex(2);*/
+		System.out.println("----------------------------------------------");
+		WebElement city = driver.findElement(By.xpath("//div[@class='cities other-cities']"));
+		System.out.println( city.getText());
 		Thread.sleep(2000);
+		System.out.println("----------------------------------------------");
 		driver.findElement(By.xpath("//div[text()='Chennai']")).click();
 		System.out.println("Self Drive Car Rental in: Chennai");
+		Thread.sleep(2000);		
+		driver.findElement(By.xpath("//a[text()='Start your wonderful journey']")).click();
 		Thread.sleep(2000);
 	}
+	
 }
