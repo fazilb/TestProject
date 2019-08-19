@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Zoomcar {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","D:\\Selenium files\\Jars\\chromedriver.exe" );
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium files\\new jars\\chromedriver.exe" );
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
@@ -30,6 +30,7 @@ public class Zoomcar {
 		Thread.sleep(2000);		
 		driver.findElement(By.xpath("//a[text()='Start your wonderful journey']")).click();
 		Thread.sleep(2000);
+		System.out.println("updated in the fazil automation machine");		
 	}
 	
 }
